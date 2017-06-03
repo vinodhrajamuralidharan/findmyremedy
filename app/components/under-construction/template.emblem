@@ -1,0 +1,4 @@
+.container
+  .row
+    .text-center
+      img src="assets/images/under-construction.png"
