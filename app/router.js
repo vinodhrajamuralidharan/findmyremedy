@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('compare');
+  this.route('accomodation');
 });
 
 export default Router;
