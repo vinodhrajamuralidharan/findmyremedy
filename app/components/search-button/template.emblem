@@ -1,0 +1,28 @@
+.container.search-button
+  .row
+    .col-xs-8.col-xs-offset-2
+      .row
+        .col-xs-2.search-category
+          .input-group-btn.search-panel
+            button.btn.btn-default.dropdown-toggle type="button" data-toggle="dropdown"
+              span id="search_concept" Filter by
+              span.caret
+            ul.dropdown-menu role="menu"
+              li
+                a href="#contains" Contains
+              li
+                a href="#its_equal" It's equal
+              li
+                a href="#greather_than" Greather than
+              li
+                a href="#less_than" Less than <
+              li.divider
+              li
+                a href="#all" Anything
+        .col-xs-8.search-input
+            input type="hidden" name="search_param" value="all" id="search_param"
+            input.form-control type="text" name="x" placeholder="Search term..."
+        .col-xs-1.search-icon
+            span.input-group-btn
+              button{action 'transitionToHome'} class="btn btn-default" type="button"
+               = fa-icon "search"
